@@ -1,0 +1,82 @@
+{
+  "model": "gemini-3.1-pro",
+  "condition": "blackbox",
+  "total_calls": 15000,
+  "total_time_sec": 19636.61972784996,
+  "calls_per_sec": 0.7638789266120992,
+  "error_rate": 0.0,
+  "summary": {
+    "theta_0.00": {
+      "theta": 0.0,
+      "accuracy": 0.61,
+      "s1_match_rate": 0.61,
+      "s2_match_rate": 0.61,
+      "total_calls": 2500,
+      "total_correct": 1525,
+      "regret_per_step": 0.39,
+      "total_regret": 975,
+      "mean_seed_accuracy": 0.61,
+      "std_seed_accuracy": 0.018330302779823376
+    },
+    "theta_0.10": {
+      "theta": 0.1,
+      "accuracy": 0.5784,
+      "s1_match_rate": 0.5784,
+      "s2_match_rate": 0.5928,
+      "total_calls": 2500,
+      "total_correct": 1446,
+      "regret_per_step": 0.4216,
+      "total_regret": 1054,
+      "mean_seed_accuracy": 0.5784,
+      "std_seed_accuracy": 0.00909945053286187
+    },
+    "theta_0.20": {
+      "theta": 0.2,
+      "accuracy": 0.5656,
+      "s1_match_rate": 0.5656,
+      "s2_match_rate": 0.5948,
+      "total_calls": 2500,
+      "total_correct": 1414,
+      "regret_per_step": 0.4344,
+      "total_regret": 1086,
+      "mean_seed_accuracy": 0.5656,
+      "std_seed_accuracy": 0.008532291603080567
+    },
+    "theta_0.30": {
+      "theta": 0.3,
+      "accuracy": 0.5544,
+      "s1_match_rate": 0.5544,
+      "s2_match_rate": 0.596,
+      "total_calls": 2500,
+      "total_correct": 1386,
+      "regret_per_step": 0.4456,
+      "total_regret": 1114,
+      "mean_seed_accuracy": 0.5544,
+      "std_seed_accuracy": 0.019359752064528064
+    },
+    "theta_0.40": {
+      "theta": 0.4,
+      "accuracy": 0.5276,
+      "s1_match_rate": 0.5276,
+      "s2_match_rate": 0.582,
+      "total_calls": 2500,
+      "total_correct": 1319,
+      "regret_per_step": 0.47240000000000004,
+      "total_regret": 1181,
+      "mean_seed_accuracy": 0.5276,
+      "std_seed_accuracy": 0.01033440854621106
+    },
+    "theta_0.50": {
+      "theta": 0.5,
+      "accuracy": 0.5204,
+      "s1_match_rate": 0.5204,
+      "s2_match_rate": 0.5816,
+      "total_calls": 2500,
+      "total_correct": 1301,
+      "regret_per_step": 0.4796,
+      "total_regret": 1199,
+      "mean_seed_accuracy": 0.5204000000000001,
+      "std_seed_accuracy": 0.018729655629509064
+    }
+  }
+}

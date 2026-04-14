@@ -1,0 +1,82 @@
+{
+  "model": "gpt-5.4",
+  "condition": "cot",
+  "total_calls": 15000,
+  "total_time_sec": 3176.194598674774,
+  "calls_per_sec": 4.722632550996263,
+  "error_rate": 0.0,
+  "summary": {
+    "theta_0.00": {
+      "theta": 0.0,
+      "accuracy": 1.0,
+      "s1_match_rate": 1.0,
+      "s2_match_rate": 1.0,
+      "total_calls": 2500,
+      "total_correct": 2500,
+      "regret_per_step": 0.0,
+      "total_regret": 0,
+      "mean_seed_accuracy": 1.0,
+      "std_seed_accuracy": 0.0
+    },
+    "theta_0.10": {
+      "theta": 0.1,
+      "accuracy": 1.0,
+      "s1_match_rate": 1.0,
+      "s2_match_rate": 0.8976,
+      "total_calls": 2500,
+      "total_correct": 2500,
+      "regret_per_step": 0.0,
+      "total_regret": 0,
+      "mean_seed_accuracy": 1.0,
+      "std_seed_accuracy": 0.0
+    },
+    "theta_0.20": {
+      "theta": 0.2,
+      "accuracy": 1.0,
+      "s1_match_rate": 1.0,
+      "s2_match_rate": 0.8116,
+      "total_calls": 2500,
+      "total_correct": 2500,
+      "regret_per_step": 0.0,
+      "total_regret": 0,
+      "mean_seed_accuracy": 1.0,
+      "std_seed_accuracy": 0.0
+    },
+    "theta_0.30": {
+      "theta": 0.3,
+      "accuracy": 1.0,
+      "s1_match_rate": 1.0,
+      "s2_match_rate": 0.7,
+      "total_calls": 2500,
+      "total_correct": 2500,
+      "regret_per_step": 0.0,
+      "total_regret": 0,
+      "mean_seed_accuracy": 1.0,
+      "std_seed_accuracy": 0.0
+    },
+    "theta_0.40": {
+      "theta": 0.4,
+      "accuracy": 1.0,
+      "s1_match_rate": 1.0,
+      "s2_match_rate": 0.6008,
+      "total_calls": 2500,
+      "total_correct": 2500,
+      "regret_per_step": 0.0,
+      "total_regret": 0,
+      "mean_seed_accuracy": 1.0,
+      "std_seed_accuracy": 0.0
+    },
+    "theta_0.50": {
+      "theta": 0.5,
+      "accuracy": 1.0,
+      "s1_match_rate": 1.0,
+      "s2_match_rate": 0.4908,
+      "total_calls": 2500,
+      "total_correct": 2500,
+      "regret_per_step": 0.0,
+      "total_regret": 0,
+      "mean_seed_accuracy": 1.0,
+      "std_seed_accuracy": 0.0
+    }
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "model": "deepseek-v3.2",
+  "condition": "privileged",
+  "total_calls": 15000,
+  "total_time_sec": 27622.751712799072,
+  "calls_per_sec": 0.5430306204088172,
+  "error_rate": 0.0,
+  "summary": {
+    "theta_0.00": {
+      "theta": 0.0,
+      "accuracy": 0.932,
+      "s1_match_rate": 0.932,
+      "s2_match_rate": 0.932,
+      "total_calls": 2500,
+      "total_correct": 2330,
+      "regret_per_step": 0.06799999999999995,
+      "total_regret": 170,
+      "mean_seed_accuracy": 0.932,
+      "std_seed_accuracy": 0.012409673645990812
+    },
+    "theta_0.10": {
+      "theta": 0.1,
+      "accuracy": 0.9156,
+      "s1_match_rate": 0.9156,
+      "s2_match_rate": 0.8812,
+      "total_calls": 2500,
+      "total_correct": 2289,
+      "regret_per_step": 0.08440000000000003,
+      "total_regret": 211,
+      "mean_seed_accuracy": 0.9156000000000001,
+      "std_seed_accuracy": 0.011081516141756065
+    },
+    "theta_0.20": {
+      "theta": 0.2,
+      "accuracy": 0.8784,
+      "s1_match_rate": 0.8784,
+      "s2_match_rate": 0.826,
+      "total_calls": 2500,
+      "total_correct": 2196,
+      "regret_per_step": 0.12160000000000004,
+      "total_regret": 304,
+      "mean_seed_accuracy": 0.8784000000000001,
+      "std_seed_accuracy": 0.01143678276439665
+    },
+    "theta_0.30": {
+      "theta": 0.3,
+      "accuracy": 0.8544,
+      "s1_match_rate": 0.8544,
+      "s2_match_rate": 0.7688,
+      "total_calls": 2500,
+      "total_correct": 2136,
+      "regret_per_step": 0.14559999999999995,
+      "total_regret": 364,
+      "mean_seed_accuracy": 0.8543999999999998,
+      "std_seed_accuracy": 0.018132843130629035
+    },
+    "theta_0.40": {
+      "theta": 0.4,
+      "accuracy": 0.8408,
+      "s1_match_rate": 0.8408,
+      "s2_match_rate": 0.7016,
+      "total_calls": 2500,
+      "total_correct": 2102,
+      "regret_per_step": 0.1592,
+      "total_regret": 398,
+      "mean_seed_accuracy": 0.8408,
+      "std_seed_accuracy": 0.021335416564951318
+    },
+    "theta_0.50": {
+      "theta": 0.5,
+      "accuracy": 0.8048,
+      "s1_match_rate": 0.8048,
+      "s2_match_rate": 0.6236,
+      "total_calls": 2500,
+      "total_correct": 2012,
+      "regret_per_step": 0.19520000000000004,
+      "total_regret": 488,
+      "mean_seed_accuracy": 0.8048,
+      "std_seed_accuracy": 0.016161683080669505
+    }
+  }
+}
