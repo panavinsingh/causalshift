@@ -2,7 +2,7 @@
 
 **A Separation Theorem for Transfer-Robust Abstraction in Modular Decision Processes**
 
-[![Paper](https://img.shields.io/badge/Paper-AGI--2027-blue)]()
+[![Paper](https://img.shields.io/badge/Paper-Preprint-blue)]()
 [![License](https://img.shields.io/badge/License-MIT-green)](LICENSE)
 [![Python](https://img.shields.io/badge/Python-3.10+-blue)]()
 
@@ -116,14 +116,11 @@ World model baselines (DreamerV3, Dreamer-CDP, TransDreamerV3, NE-Dreamer) requi
 ## Citation
 
 ```bibtex
-@inproceedings{singh2027cost,
+@article{singh2026cost,
   title={The Cost of Counterfactuals: A Separation Theorem for Transfer-Robust
          Abstraction in Modular Decision Processes},
   author={Singh, Panavin},
-  booktitle={Proceedings of the 20th International Conference on
-             Artificial General Intelligence (AGI-2027)},
-  year={2027},
-  publisher={Springer LNAI}
+  year={2026}
 }
 ```
 
