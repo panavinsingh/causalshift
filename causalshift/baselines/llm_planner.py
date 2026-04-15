@@ -140,7 +140,7 @@ class VertexGeminiPlanner(LLMPlanner):
     def __init__(self, model_name: str = "gemini-3.1-pro-preview", condition: str = "privileged"):
         super().__init__(condition)
         self.model_name = model_name
-        self.project = os.environ.get("GOOGLE_CLOUD_PROJECT", "glowupscore-ai")
+        self.project = os.environ.get("GOOGLE_CLOUD_PROJECT", "your-gcp-project")
         # Gemini 3.1 Pro requires global endpoint, not regional
         self.location = "global" if "3.1" in model_name else os.environ.get("GOOGLE_CLOUD_REGION", "us-central1")
         self._refresh_token()
@@ -255,7 +255,7 @@ class VertexQwenPlanner(LLMPlanner):
 
     def __init__(self, condition: str = "privileged"):
         super().__init__(condition)
-        self.project = os.environ.get("GOOGLE_CLOUD_PROJECT", "glowupscore-ai")
+        self.project = os.environ.get("GOOGLE_CLOUD_PROJECT", "your-gcp-project")
         self.model_id = "qwen3-235b-a22b-instruct-2507-maas"
         self._refresh_token()
 
@@ -309,7 +309,7 @@ class VertexQwenPlanner(LLMPlanner):
 
 PLANNER_REGISTRY = {
     # Closed-source
-    "claude-opus-4.6": lambda cond: BedrockClaudePlanner("arn:aws:bedrock:us-east-1:855158726562:inference-profile/global.anthropic.claude-opus-4-6-v1", cond),
+    "claude-opus-4.6": lambda cond: BedrockClaudePlanner(os.environ.get("BEDROCK_CLAUDE_MODEL_ARN", "anthropic.claude-opus-4-6-v1"), cond),
     "gpt-5.4": lambda cond: AzureOpenAIPlanner(cond),
     "gemini-3.1-pro": lambda cond: VertexGeminiPlanner("gemini-3.1-pro-preview", cond),
     # Open-source (via Bedrock managed API)
