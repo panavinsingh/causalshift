@@ -1,16 +1,18 @@
 """DreamerV3 baseline on CausalShift — Kaggle GPU notebook.
 
-DreamerV3: reconstruction-based DreamerV3 with JEPA-style
-continuous deterministic prediction. Matches DreamerV3 performance
-without pixel reconstruction.
+DreamerV3: standard reconstruction-based world model with encoder,
+decoder, latent dynamics predictor, and reward head.
 
-Reference: Zenke Lab (March 2026) arXiv:2603.07083
+Reference: Hafner et al. (2023) "Mastering Diverse Domains through
+World Models" arXiv:2301.04104
 
-For our discrete environments, we implement the core difference:
-- DreamerV3: encoder + decoder (reconstructs state)
-- DreamerV3: encoder + latent predictor (predicts next latent, no decoder)
+For our discrete environments, the model:
+- Encodes state to latent via MLP encoder
+- Reconstructs state via MLP decoder (reconstruction loss)
+- Predicts next latent via transition predictor
+- Predicts reward via reward head
 
-Both learn world models from source data and are evaluated on transfer.
+Trained on source data, then frozen policy is evaluated on transfer.
 """
 
 import subprocess

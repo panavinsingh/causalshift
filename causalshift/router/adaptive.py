@@ -66,11 +66,6 @@ class AdaptiveRouter:
 
         self.stats = RouterStats()
 
-        # Prediction error tracking (for structured shift detection)
-        self._recent_errors_m: list[float] = []
-        self._recent_errors_p: list[float] = []
-        self._window = 50
-
     def select_and_act(self, state: np.ndarray, rng: np.random.Generator) -> tuple[int, str]:
         """Select an abstraction via EXP3, return (action, chosen_abstraction_name)."""
         total_w = self.w_m + self.w_p
